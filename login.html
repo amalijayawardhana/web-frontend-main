@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Student Login</title>
+  <link rel="stylesheet" href="css/style.css">
+    <!-- Google Font: Source Sans Pro -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+</head>
+<body>
+<div class="hero">
+    <div class="form-box">
+        <div class="button-box">
+            <div id="btn"></div>
+            <button type="button" class="toggle-btn" onclick="login()">Login</button>
+            <button type="button" class="toggle-btn" onclick="register()">Register</button>
+        </div>
+        <form action="manage-students.html" id="login" class="input-group">
+            <input id="username" type="text" class="input-field" placeholder="UserID" required>
+            <input id="password" type="password" class="input-field" placeholder="Password" required>
+            <input type="checkbox" class="checkbox"><span>Remember Password</span>
+            <button id="logged-in" type="submit" class="submit-btn" onclick="getInfo()">Login</button>
+        </form>
+        <form id="register" class="input-group">
+            <input type="text" class="input-field" placeholder="UserID" required>
+            <input type="email" class="input-field" placeholder="Email" required>
+            <input type="text" class="input-field" placeholder="Password" required>
+            <input type="checkbox" class="checkbox"><span>I agree to the terms & conditions</span>
+            <button type="submit" class="submit-btn">Register</button>
+        </form>
+    </div>
+</div>
+
+
+<script src="js/manage-login-controller.js"></script>
+
+</body>
+</html>
